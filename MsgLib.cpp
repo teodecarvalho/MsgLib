@@ -1,13 +1,13 @@
-#include "msg.h"
-msg::msg(int msgSize){
+#include "MsgLib.h"
+MsgLib::MsgLib(int msgSize){
   _msgSize = msgSize;
 }
 
-void msg::begin(int baudRate){
+void MsgLib::begin(int baudRate){
   Serial.begin(baudRate);
 }
 
-void msg::receiveMsg(){
+void MsgLib::receiveMsg(){
   int index = 0;
   bool invalid = LOW;
   // Clear msg variable
@@ -27,6 +27,6 @@ void msg::receiveMsg(){
   Serial.println(msg);
 }
 
-void msg::clearMsg(){
+void MsgLib::clearMsg(){
   for(int i = 0; i < (_msgSize - 1); i++) msg[i] = '\0';
 }

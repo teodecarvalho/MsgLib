@@ -1,4 +1,4 @@
-msg KEYWORD1
+MsgLib KEYWORD1
 
 begin KEYWORD2
 receiveMsg KEYWORD2

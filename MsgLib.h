@@ -7,10 +7,10 @@
   #include "WProgram.h"
 #endif
 
-class msg {
+class MsgLib {
   public:
     // Constructor
-    msg(int msgSize = 20);
+    MsgLib(int msgSize = 20);
 
     // Methods
     void begin(int baudRate = 9600);
